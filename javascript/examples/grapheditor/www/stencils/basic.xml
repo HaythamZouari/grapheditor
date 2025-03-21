@@ -1,4 +1,140 @@
 <shapes name="mxgraph.basic">
+
+
+<shapes name="Schema_Photovoltaique">
+    <!-- Panneau solaire -->
+    <shape name="Panneau_Solaire" h="60" w="40" aspect="variable" strokewidth="inherit">
+        <connections>
+            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
+            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
+        </connections>
+        <foreground>
+            <!-- Rectangle pour le panneau -->
+            <rect x="5" y="5" w="30" h="50"/>
+            <!-- Lignes de connexion -->
+            <path>
+                <move x="0" y="30"/>
+                <line x="5" y="30"/>
+            </path>
+            <path>
+                <move x="35" y="30"/>
+                <line x="40" y="30"/>
+            </path>
+            <stroke/>
+        </foreground>
+    </shape>
+
+    <!-- Onduleur -->
+    <shape name="Onduleur" h="40" w="60" aspect="variable" strokewidth="inherit">
+        <connections>
+            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
+            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
+        </connections>
+        <foreground>
+            <!-- Rectangle pour l'onduleur -->
+            <rect x="5" y="5" w="50" h="30"/>
+            <!-- Texte "Inverter" -->
+            <text x="15" y="20" str="Inverter"/>
+            <stroke/>
+        </foreground>
+    </shape>
+
+    <!-- Batterie -->
+    <shape name="Batterie" h="40" w="60" aspect="variable" strokewidth="inherit">
+        <connections>
+            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
+            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
+        </connections>
+        <foreground>
+            <!-- Rectangle pour la batterie -->
+            <rect x="5" y="5" w="50" h="30"/>
+            <!-- Texte "Battery" -->
+            <text x="15" y="20" str="Battery"/>
+            <stroke/>
+        </foreground>
+    </shape>
+
+    <!-- Charge (Load) -->
+    <shape name="Charge" h="40" w="60" aspect="variable" strokewidth="inherit">
+        <connections>
+            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
+            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
+        </connections>
+        <foreground>
+            <!-- Rectangle pour la charge -->
+            <rect x="5" y="5" w="50" h="30"/>
+            <!-- Texte "Load" -->
+            <text x="20" y="20" str="Load"/>
+            <stroke/>
+        </foreground>
+    </shape>
+
+    <!-- Disjoncteur -->
+    <shape name="Disjoncteur" h="20" w="40" aspect="variable" strokewidth="inherit">
+        <connections>
+            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
+            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
+        </connections>
+        <foreground>
+            <!-- Ligne gauche -->
+            <path>
+                <move x="0" y="10"/>
+                <line x="15" y="10"/>
+            </path>
+            <!-- Ligne droite -->
+            <path>
+                <move x="25" y="10"/>
+                <line x="40" y="10"/>
+            </path>
+            <!-- Rectangle pour le disjoncteur -->
+            <rect x="15" y="5" w="10" h="10"/>
+            <stroke/>
+        </foreground>
+    </shape>
+
+    <!-- Interrupteur -->
+    <shape name="Interrupteur" h="20" w="40" aspect="variable" strokewidth="inherit">
+        <connections>
+            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
+            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
+        </connections>
+        <foreground>
+            <!-- Ligne gauche -->
+            <path>
+                <move x="0" y="10"/>
+                <line x="15" y="10"/>
+            </path>
+            <!-- Ligne droite -->
+            <path>
+                <move x="25" y="10"/>
+                <line x="40" y="10"/>
+            </path>
+            <!-- Cercle pour l'interrupteur -->
+            <ellipse x="15" y="5" w="10" h="10"/>
+            <stroke/>
+        </foreground>
+    </shape>
+
+    <!-- Fil de connexion -->
+    <shape name="Fil" h="10" w="100" aspect="variable" strokewidth="inherit">
+        <connections>
+            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
+            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
+        </connections>
+        <foreground>
+            <!-- Ligne horizontale -->
+            <path>
+                <move x="0" y="5"/>
+                <line x="100" y="5"/>
+            </path>
+            <stroke/>
+        </foreground>
+    </shape>
+</shapes>
+
+
+
+
 <shape name="4 Point Star" h="92" w="92" aspect="variable" strokewidth="inherit">
 <connections>
 <constraint x="0.5" y="0" perimeter="0" name="N"/>
