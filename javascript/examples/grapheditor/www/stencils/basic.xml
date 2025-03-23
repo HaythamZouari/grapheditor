@@ -1,28 +1,47 @@
 <shapes name="mxgraph.basic">
 
 
-<shapes name="Schema_Photovoltaique">
-    <!-- Panneau solaire -->
+
     <shape name="Panneau_Solaire" h="60" w="40" aspect="variable" strokewidth="inherit">
-        <connections>
-            <constraint name="L" x="0" y="0.5" perimeter="0"/> <!-- Point gauche -->
-            <constraint name="R" x="1" y="0.5" perimeter="0"/> <!-- Point droit -->
-        </connections>
-        <foreground>
-            <!-- Rectangle pour le panneau -->
-            <rect x="5" y="5" w="30" h="50"/>
-            <!-- Lignes de connexion -->
-            <path>
-                <move x="0" y="30"/>
-                <line x="5" y="30"/>
-            </path>
-            <path>
-                <move x="35" y="30"/>
-                <line x="40" y="30"/>
-            </path>
-            <stroke/>
-        </foreground>
-    </shape>
+     
+    <connections>
+        <constraint name="B" x="0.5" y="1" perimeter="1"/>  <!-- Base -->
+        <constraint name="C" x="0.5" y="0" perimeter="1"/>  <!-- Collecteur -->
+        <constraint name="E" x="1" y="1" perimeter="1"/>  <!-- Émetteur -->
+    </connections>
+    <foreground>
+        <!-- Cercle du transistor -->
+        <ellipse x="10" y="10" w="40" h="40"/>
+        
+        <!-- Ligne collecteur -->
+        <path>
+            <move x="30" y="10"/>
+            <line x="30" y="0"/>
+        </path>
+        
+        <!-- Ligne base -->
+        <path>
+            <move x="30" y="50"/>
+            <line x="30" y="60"/>
+        </path>
+        
+        <!-- Ligne émetteur -->
+        <path>
+            <move x="40" y="40"/>
+            <line x="50" y="50"/>
+        </path>
+        
+        <!-- Flèche pour l'émetteur -->
+        <path>
+            <move x="44" y="44"/>
+            <line x="50" y="50"/>
+            <line x="44" y="48"/>
+        </path>
+        
+        <stroke/>
+    </foreground>
+</shape>
+
 
     <!-- Onduleur -->
     <shape name="Onduleur" h="40" w="60" aspect="variable" strokewidth="inherit">
@@ -34,7 +53,7 @@
             <!-- Rectangle pour l'onduleur -->
             <rect x="5" y="5" w="50" h="30"/>
             <!-- Texte "Inverter" -->
-            <text x="15" y="20" str="Inverter"/>
+            
             <stroke/>
         </foreground>
     </shape>

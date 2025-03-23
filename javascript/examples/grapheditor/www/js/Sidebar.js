@@ -86,6 +86,7 @@ Sidebar.prototype.init = function()
 	this.addMiscPalette(false);
 	this.addAdvancedPalette(false);
 	this.addBasicPalette(dir);
+	this.addConnectionPalette(false);
 	
 	this.setCurrentSearchEntryLibrary('arrows');
 	this.addStencilPalette('arrows', mxResources.get('arrows'), dir + '/arrows.xml',
@@ -1044,6 +1045,43 @@ Sidebar.prototype.insertSearchHint = function(div, searchTerm, count, page, resu
 	}
 };
 
+/** add connection palette */
+Sidebar.prototype.addConnectionPalette = function(expand)
+{
+	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
+	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
+	var gnmess = 'mxgraph.electrical.connections';
+	var dtmess = 'electrical ';
+	var fns = [
+		this.createVertexTemplateEntry(mess + 'earth;', 
+		60, 60, '', 'Earth(ground)', null, null, this.getTagsForStencil(gnmess, 'earth', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + 'pro_earth;', 
+		60, 60, '', 'Protective earth', null, null, this.getTagsForStencil(gnmess, 'pro_earth', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + 'frame;', 
+		60, 60, '', 'Frame', null, null, this.getTagsForStencil(gnmess, 'frame', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + 'neutral;', 
+		30, 60, '', 'Neutral Conductor', null, null, this.getTagsForStencil(gnmess, 'neutral', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + 'protective;', 
+		30, 60, '', 'Protective Conductor', null, null, this.getTagsForStencil(gnmess, 'protective', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + 'comb_pro_neu;', 
+		30, 60, '', 'Combined protective and neutral conductor', null, null, this.getTagsForStencil(gnmess, 'comb_pro_neu', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + '3_neu_pro;', 
+		30, 60, '', 'Three-phase wiring with neutral conductor and protective conductor', null, null, this.getTagsForStencil(gnmess, '3_neu_pro', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + '3_neu;', 
+		30, 60, '', 'Three-phase and neutral', null, null, this.getTagsForStencil(gnmess, '3_neu', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + '3_phase;', 
+		30, 60, '', 'Three-phase', null, null, this.getTagsForStencil(gnmess, '3_phase', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + 'ph_neu;', 
+		30, 60, '', 'Single-phase and neutral', null, null, this.getTagsForStencil(gnmess, 'ph_neu', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + '2_ph;', 
+		30, 60, '', 'Two-phase', null, null, this.getTagsForStencil(gnmess, '2_ph', dtmess).join(' ')),
+		this.createVertexTemplateEntry(mess + 'bouton;', 
+			30, 60, '', 'bouton', null, null, this.getTagsForStencil(gnmess, 'transistor_npn', dtmess).join(' ')),
+	];
+
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
+};
+
 /**
  * Adds the general palette to the sidebar.
  */
@@ -1326,7 +1364,15 @@ Sidebar.prototype.addBasicPalette = function(dir)
 			this.createVertexTemplateEntry('shape=partialRectangle;whiteSpace=wrap;html=1;top=0;bottom=0;fillColor=none;', 120, 60, '', 'Partial Rectangle'),
 			this.createVertexTemplateEntry('shape=partialRectangle;whiteSpace=wrap;html=1;right=0;top=0;bottom=0;fillColor=none;routingCenterX=-0.5;', 120, 60, '', 'Partial Rectangle'),
 			this.createVertexTemplateEntry('shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;', 120, 60, '', 'Partial Rectangle'),
-			this.createVertexTemplateEntry('shape=partialRectangle;whiteSpace=wrap;html=1;top=0;left=0;fillColor=none;', 120, 60, '', 'Partial Rectangle')
+			this.createVertexTemplateEntry('shape=partialRectangle;whiteSpace=wrap;html=1;top=0;left=0;fillColor=none;', 120, 60, '', 'Partial Rectangle'),
+			this.createVertexTemplateEntry('shape=Panneau_Solaire', 40, 60, 'Panneau Solaire', null, null, 'Panneau_Solaire'),
+            this.createVertexTemplateEntry('shape=Onduleur', 60, 40, 'Onduleur', null, null, 'Onduleur'),
+            this.createVertexTemplateEntry('shape=Batterie', 60, 40, 'Batterie', null, null, 'Batterie'),
+            this.createVertexTemplateEntry('shape=Charge', 60, 40, 'Charge', null, null, 'Charge'),
+            this.createVertexTemplateEntry('shape=Disjoncteur', 40, 20, 'Disjoncteur', null, null, 'Disjoncteur'),
+            this.createVertexTemplateEntry('shape=Interrupteur', 40, 20, 'Interrupteur', null, null, 'Interrupteur'),
+            this.createVertexTemplateEntry('shape=Fil', 100, 10, 'Fil', null, null, 'Fil')
+			
 	]);
 	this.setCurrentSearchEntryLibrary();
 };

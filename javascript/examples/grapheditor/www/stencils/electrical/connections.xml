@@ -1,0 +1,455 @@
+<shapes name="mxgraph.electrical.connections">
+
+<shape aspect="variable" h="54" name="earth" strokewidth="inherit" w="50">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.5" y="0"/>
+        
+    </connections>
+    <foreground>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="0" y="41"/>
+            <line x="50" y="41"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="10" y="48"/>
+            <line x="40" y="48"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="20" y="54"/>
+            <line x="30" y="54"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="25" y="41"/>
+            <line x="25" y="0"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="frame" strokewidth="inherit" w="59">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.5" y="0"/>
+        
+    </connections>
+    <foreground>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="9" y="41"/>
+            <line x="59" y="41"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="34" y="41"/>
+            <line x="34" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="59"/>
+            <line x="10" y="41"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="24" y="59"/>
+            <line x="34" y="41"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="49" y="59"/>
+            <line x="59" y="41"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="neutral" strokewidth="inherit" w="23">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.435" y="0"/>
+        <constraint name="N" perimeter="0" x="0.435" y="1"/>
+        
+    </connections>
+    <foreground>
+        <save/>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="10" y="59"/>
+            <line x="10" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="40"/>
+            <line x="17.88" y="22.12"/>
+        </path>
+        <stroke/>
+        <restore/>
+        <rect/>
+        <stroke/>
+        <strokecolor color="#000000"/>
+        <fillcolor color="#000000"/>
+        <ellipse h="6" w="6" x="17" y="17"/>
+        <fillstroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="protective" strokewidth="inherit" w="23">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.51" y="0"/>
+        <constraint name="N" perimeter="0" x="0.51" y="1"/>
+        
+    </connections>
+    <foreground>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="12" y="59"/>
+            <line x="12" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="40"/>
+            <line x="23" y="17"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="23" y="20"/>
+            <line x="23" y="15"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="comb_pro_neu" strokewidth="inherit" w="24">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.33" y="0"/>
+        <constraint name="N" perimeter="0" x="0.33" y="1"/>
+        
+    </connections>
+    <foreground>
+        <save/>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="8" y="59"/>
+            <line x="8" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="1" y="35"/>
+            <line x="24" y="12"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="24" y="15"/>
+            <line x="24" y="10"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="36"/>
+            <line x="14.88" y="21.12"/>
+        </path>
+        <stroke/>
+        <restore/>
+        <rect/>
+        <stroke/>
+        <strokecolor color="#000000"/>
+        <fillcolor color="#000000"/>
+        <ellipse h="6" w="6" x="14" y="16"/>
+        <fillstroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="3_neu_pro" strokewidth="inherit" w="20">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.4" y="0"/>
+        <constraint name="N" perimeter="0" x="0.4" y="1"/>
+        
+    </connections>
+    <foreground>
+        <save/>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="8" y="59"/>
+            <line x="8" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="54"/>
+            <line x="14.88" y="39.12"/>
+        </path>
+        <stroke/>
+        <restore/>
+        <rect/>
+        <stroke/>
+        <strokecolor color="#000000"/>
+        <fillcolor color="#000000"/>
+        <ellipse h="6" w="6" x="14" y="34"/>
+        <fillstroke/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="0" y="42"/>
+            <line x="17" y="25"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="17" y="28"/>
+            <line x="17" y="23"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="24"/>
+            <line x="16" y="8"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="27"/>
+            <line x="16" y="11"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="30"/>
+            <line x="16" y="14"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="3_neu" strokewidth="inherit" w="20">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.4" y="0"/>
+        <constraint name="N" perimeter="0" x="0.4" y="1"/>
+        
+    </connections>
+    <foreground>
+        <save/>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="8" y="59"/>
+            <line x="8" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="50"/>
+            <line x="14.88" y="35.12"/>
+        </path>
+        <stroke/>
+        <restore/>
+        <rect/>
+        <stroke/>
+        <strokecolor color="#000000"/>
+        <fillcolor color="#000000"/>
+        <ellipse h="6" w="6" x="14" y="30"/>
+        <fillstroke/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="0" y="24"/>
+            <line x="16" y="8"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="33"/>
+            <line x="16" y="17"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="41"/>
+            <line x="16" y="25"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="3_phase" strokewidth="inherit" w="16">
+   <connections>
+        <constraint name="N" perimeter="0" x="0.5" y="0"/>
+        <constraint name="N" perimeter="0" x="0.5" y="1"/>
+        
+    </connections>
+    <foreground>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="8" y="59"/>
+            <line x="8" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="27"/>
+            <line x="16" y="11"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="36"/>
+            <line x="16" y="20"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="44"/>
+            <line x="16" y="28"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="ph_neu" strokewidth="inherit" w="20">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.4" y="0"/>
+        <constraint name="N" perimeter="0" x="0.4" y="1"/>
+        
+    </connections>
+    <foreground>
+        <save/>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="8" y="59"/>
+            <line x="8" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="41"/>
+            <line x="14.88" y="26.12"/>
+        </path>
+        <stroke/>
+        <restore/>
+        <rect/>
+        <stroke/>
+        <strokecolor color="#000000"/>
+        <fillcolor color="#000000"/>
+        <ellipse h="6" w="6" x="14" y="21"/>
+        <fillstroke/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="0" y="32"/>
+            <line x="16" y="16"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="59" name="2_ph" strokewidth="inherit" w="16">
+    <connections>
+        <constraint name="N" perimeter="0" x="0.5" y="0"/>
+        <constraint name="N" perimeter="0" x="0.5" y="1"/>
+        
+    </connections>
+    <foreground>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="8" y="59"/>
+            <line x="8" y="0"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="33"/>
+            <line x="16" y="17"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="0" y="42"/>
+            <line x="16" y="26"/>
+        </path>
+        <stroke/>
+    </foreground>
+</shape>
+
+<shape aspect="variable" h="71" name="pro_earth" strokewidth="inherit" w="56">
+    <connections/>
+    <foreground>
+        <save/>
+        <strokecolor color="#000000"/>
+        <miterlimit limit="10"/>
+        <path>
+            <move x="3" y="41"/>
+            <line x="53" y="41"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="13" y="48"/>
+            <line x="43" y="48"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="23" y="54"/>
+            <line x="33" y="54"/>
+        </path>
+        <stroke/>
+        <path>
+            <move x="28" y="41"/>
+            <line x="28" y="0"/>
+        </path>
+        <stroke/>
+        <restore/>
+        <rect/>
+        <stroke/>
+        <strokecolor color="#000000"/>
+        <ellipse h="56" w="56" x="0" y="15"/>
+        <stroke/>
+    </foreground>
+</shape>
+
+
+
+<shape aspect="variable" h="790" name="bouton" strokewidth="inherit" w="275">
+    <connections>
+        <constraint name="N" perimeter="0" x="0" y="0"/>
+        <constraint name="N" perimeter="0" x="0" y="1"/>
+        
+    </connections>
+    <foreground>
+        <fillcolor color="#000000"/>
+        <path>
+            <move x="0" y="655"/>
+            <line x="0" y="520"/>
+            <line x="45" y="520"/>
+            <curve x1="70" x2="90" x3="90" y1="520" y2="518" y3="515"/>
+            <curve x1="90" x2="70" x3="45" y1="512" y2="460" y3="400"/>
+            <line x="0" y="291"/>
+            <line x="0" y="144"/>
+            <curve x1="0" x2="3" x3="6" y1="63" y2="0" y3="3"/>
+            <curve x1="10" x2="13" x3="14" y1="6" y2="71" y3="147"/>
+            <curve x1="15" x2="19" x3="33" y1="256" y2="293" y3="323"/>
+            <line x="50" y="360"/>
+            <line x="150" y="360"/>
+            <curve x1="212" x2="250" x3="250" y1="360" y2="356" y3="350"/>
+            <curve x1="250" x2="243" x3="235" y1="344" y2="323" y3="303"/>
+            <curve x1="217" x2="217" x3="230" y1="261" y2="260" y3="260"/>
+            <curve x1="247" x2="272" x3="274" y1="260" y2="333" y3="390"/>
+            <curve x1="275" x2="252" x3="233" y1="453" y2="540" y3="540"/>
+            <curve x1="217" x2="217" x3="235" y1="540" y2="540" y3="497"/>
+            <curve x1="243" x2="250" x3="250" y1="477" y2="456" y3="450"/>
+            <curve x1="250" x2="217" x3="166" y1="444" y2="440" y3="440"/>
+            <line x="81" y="440"/>
+            <line x="98" y="480"/>
+            <curve x1="107" x2="121" x3="128" y1="502" y2="520" y3="520"/>
+            <curve x1="134" x2="140" x3="140" y1="520" y2="525" y3="530"/>
+            <curve x1="140" x2="135" x3="130" y1="536" y2="540" y3="540"/>
+            <curve x1="124" x2="126" x3="135" y1="540" y2="553" y3="570"/>
+            <curve x1="148" x2="148" x3="136" y1="596" y2="600" y3="600"/>
+            <curve x1="128" x2="119" x3="115" y1="600" y2="587" y3="570"/>
+            <curve x1="109" x2="106" x3="58" y1="542" y2="540" y3="540"/>
+            <line x="8" y="540"/>
+            <line x="11" y="665"/>
+            <curve x1="13" x2="12" x3="8" y1="734" y2="790" y3="790"/>
+            <curve x1="3" x2="0" x3="0" y1="790" y2="729" y3="655"/>
+            <close/>
+            <move x="260" y="400"/>
+            <curve x1="260" x2="253" x3="160" y1="381" y2="380" y3="380"/>
+            <curve x1="105" x2="60" x3="60" y1="380" y2="382" y3="384"/>
+            <curve x1="60" x2="75" x3="166" y1="415" y2="420" y3="420"/>
+            <curve x1="253" x2="260" x3="260" y1="420" y2="419" y3="400"/>
+            <close/>
+        </path>
+        <fill/>
+    </foreground>
+</shape>
+
+</shapes>
