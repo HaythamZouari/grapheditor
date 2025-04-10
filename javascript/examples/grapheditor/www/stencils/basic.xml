@@ -38,7 +38,7 @@
             <line x="44" y="48"/>
         </path>
         
-        <stroke/>
+        <fillstroke/>
     </foreground>
 </shape>
 
@@ -54,7 +54,7 @@
             <rect x="5" y="5" w="50" h="30"/>
             <!-- Texte "Inverter" -->
             
-            <stroke/>
+            <fillstroke/>
         </foreground>
     </shape>
 
@@ -145,7 +145,7 @@
             <path>
                 <move x="0" y="5"/>
                 <line x="100" y="5"/>
-            </path>
+            
             <stroke/>
         </foreground>
     </shape>
