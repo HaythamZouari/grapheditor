@@ -840,7 +840,7 @@
             <close/>
         </path>
         <fill/>
-</foreground></shape><shape aspect='variable' h='50' name='ac-motor-2p-fan' strokewidth='inherit' w='25'><foreground>
+</foreground></shape><shape aspect='variable'  name='ac-motor-2p-fan' strokewidth='inherit' ><foreground>
         <strokecolor color="black"/>
         <strokewidth width="0.986415"/>
         <path>
