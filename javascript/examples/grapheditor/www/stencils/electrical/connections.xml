@@ -12575,7 +12575,10 @@
             <close/>
         </path>
         <fill/>
-</foreground></shape><shape aspect='variable' h='50' name='dc-motor-3p-star-connected' strokewidth='inherit' w='25'><foreground>
+</foreground>
+</shape>
+<shape aspect='variable' h='50' name='dc-motor-3p-star-connected' strokewidth='inherit' w='25'>
+    <foreground>
         <strokecolor color="black"/>
         <strokewidth width="0.986415"/>
         <path>
@@ -12781,28 +12784,10 @@
             <close/>
         </path>
         <fill/>
-        <path>
-            <move x="13.106" y="61.522"/>
-            <line x="8.084" y="43.157"/>
-            <line x="10.344" y="43.157"/>
-            <line x="14.182" y="58.114"/>
-            <line x="14.361" y="58.114"/>
-            <line x="18.271" y="43.157"/>
-            <line x="20.782" y="43.157"/>
-            <line x="24.692" y="58.114"/>
-            <line x="24.871" y="58.114"/>
-            <line x="28.709" y="43.157"/>
-            <line x="30.969" y="43.157"/>
-            <line x="25.947" y="61.522"/>
-            <line x="23.651" y="61.522"/>
-            <line x="19.598" y="46.887"/>
-            <line x="19.455" y="46.887"/>
-            <line x="15.401" y="61.522"/>
-            <line x="13.106" y="61.522"/>
-            <close/>
-        </path>
-        <fill/>
-</foreground></shape><shape aspect='variable' h='50' name='dc-motor-shunt-wound' strokewidth='inherit' w='25'><foreground>
+        
+    </foreground>
+</shape>
+<shape aspect='variable' h='50' name='dc-motor-shunt-wound' strokewidth='inherit' w='25'><foreground>
         <strokecolor color="black"/>
         <strokewidth width="0.0394566"/>
         <path>
