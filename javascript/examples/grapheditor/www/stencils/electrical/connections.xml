@@ -12645,11 +12645,11 @@
 <shape aspect="variable" h="50" name="contactor-3p-nc" strokewidth="inherit" w="55.614">
     <connections>
     <constraint x="0.1" y="1" perimeter="0"/>
-    <constraint x="0.5" y="1" perimeter="0"/>
-    <constraint x="0.9" y="1" perimeter="0"/>
+    <constraint x="0.46" y="1" perimeter="0"/>
+    <constraint x="0.82" y="1" perimeter="0"/>
     <constraint x="0.1" y="0" perimeter="0"/>
-    <constraint x="0.5" y="0" perimeter="0"/>
-    <constraint x="0.9" y="0" perimeter="0"/>
+    <constraint x="0.46" y="0" perimeter="0"/>
+    <constraint x="0.82" y="0" perimeter="0"/>
 </connections>
     <foreground>
         <save/>
