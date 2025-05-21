@@ -1228,7 +1228,7 @@ Sidebar.prototype.addConnectionPalette = function(expand)
 			30, 60, '', 'clutch', null, null, this.getTagsForStencil(gnmess, 'clutch', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'coil--1;',
 			30, 60, '', 'coil--1', null, null, this.getTagsForStencil(gnmess, 'coil--1', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'coil (2);',
+	this.createVertexTemplateEntry(mess + 'coil--2;',
 			30, 60, '', 'coil (2)', null, null, this.getTagsForStencil(gnmess, 'coil--2', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'coil;',
 			30, 60, '', 'coil', null, null, this.getTagsForStencil(gnmess, 'coil', dtmess).join(' ')),
