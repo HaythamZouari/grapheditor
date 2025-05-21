@@ -11630,7 +11630,12 @@
 
 
 <shape aspect="variable" h="50" name="coil--1" strokewidth="inherit" w="20.405">
-    <connections/>
+    <connections>
+        <constraint name="N" perimeter="0" x="0.5" y="0"/>
+        <constraint name="S" perimeter="0" x="0.5" y="1"/>
+        <constraint name="W" perimeter="0" x="0" y="0.5"/>
+        <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
     <foreground>
         <save/>
         
