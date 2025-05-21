@@ -6382,8 +6382,8 @@
 
 <shape aspect="variable" h="50" name="buzzer" strokewidth="inherit" w="25.405">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.4094" y="0" perimeter="0"/>
+        <constraint x="0.4094" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <fillcolor color="black"/>
