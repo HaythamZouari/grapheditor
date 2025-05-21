@@ -325,8 +325,8 @@
 
 <shape aspect="variable" h="53" name="ac-motor-2p-series-wound" strokewidth="inherit" w="59.292">
    <connections>
-        <constraint x="0,57835" y="1" perimeter="0"/>
-        <constraint x="1" y="1" perimeter="0"/>
+        <constraint x="0.157" y="0" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -655,8 +655,8 @@
 
 <shape aspect="variable" h="46" name="ac-motor-2p" strokewidth="inherit" w="34.291">
    <connections>
-        <constraint x="0,2709" y="0" perimeter="0"/>
-        <constraint x="0,8542" y="0" perimeter="0"/>
+        <constraint x="0.2709" y="0" perimeter="0"/>
+        <constraint x="0.8542" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -780,8 +780,9 @@
 
 <shape aspect="variable" h="46" name="ac-motor-3p-3-terminal" strokewidth="inherit" w="68.538">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.7082" y="0" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="0.4164" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -998,8 +999,12 @@
 
 <shape aspect="variable" h="60.097" name="ac-motor-3p-6-terminal" strokewidth="inherit" w="68.544">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="0.7082" y="0" perimeter="0"/>
+        <constraint x="0.4164" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
+        <constraint x="0.7082" y="1" perimeter="0"/>
+        <constraint x="0.4164" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -1384,8 +1389,9 @@
 
 <shape aspect="variable" h="80" name="ac-motor-3p-fan-3-terminal" strokewidth="inherit" w="68.542">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+       <constraint x="0.7082" y="0" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="0.4164" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -1633,8 +1639,12 @@
 
 <shape aspect="variable" h="70" name="ac-motor-3p-fan-6-terminal" strokewidth="inherit" w="93.54">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.7327" y="0" perimeter="0"/>
+        <constraint x="0.5189" y="0" perimeter="0"/>
+        <constraint x="0.3051" y="0" perimeter="0"/>
+        <constraint x="0.7327" y="1" perimeter="0"/>
+        <constraint x="0.5189" y="1" perimeter="0"/>
+        <constraint x="0.3051" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -2050,8 +2060,9 @@
 
 <shape aspect="variable" h="51" name="ac-motor-3p-linear" strokewidth="inherit" w="56.729">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.6475" y="0" perimeter="0"/>
+        <constraint x="0.2949" y="0" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -2237,8 +2248,9 @@
 
 <shape aspect="variable" h="70" name="ac-motor-3p-series-wound" strokewidth="inherit" w="51.504">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="0.611" y="0" perimeter="0"/>
+        <constraint x="0.223" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -2421,8 +2433,12 @@
 
 <shape aspect="variable" h="80" name="ac-motor-3p-slipring-rotor" strokewidth="inherit" w="68.544">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.4164" y="1" perimeter="0"/>
+        <constraint x="0.7082" y="1" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
+        <constraint x="0.4164" y="0" perimeter="0"/>
+        <constraint x="0.7082" y="0" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -2808,8 +2824,8 @@
 
 <shape aspect="variable" h="50" name="ac-resistant-coil" strokewidth="inherit" w="20.405">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.51" y="1" perimeter="0"/>
+        <constraint x="0.51" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <fillcolor color="black"/>
@@ -2945,8 +2961,8 @@
 
 <shape aspect="variable" h="50" name="ammeter--1" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -3002,8 +3018,8 @@
 
 <shape aspect="variable" h="42.195" name="ammeter-reactive-current" strokewidth="inherit" w="25">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0.22" perimeter="0"/>
+        <constraint x="0.5" y="0.81" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -3193,8 +3209,8 @@
 
 <shape aspect="variable" h="42.195" name="ammeter" strokewidth="inherit" w="25">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0.22" perimeter="0"/>
+        <constraint x="0.5" y="0.81" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -3285,8 +3301,8 @@
 
 <shape aspect="variable" h="47.196" name="ampere-hour-meter" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0.1949" perimeter="0"/>
+        <constraint x="0.5" y="0.8305" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -3411,8 +3427,8 @@
 
 <shape aspect="variable" h="20" name="antenna" strokewidth="inherit" w="10">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="1" perimeter="0"/>
+        
     </connections>
     <foreground>
         
@@ -3436,8 +3452,10 @@
 
 <shape aspect="variable" h="50" name="autotransformer-1p-voltage-regulation" strokewidth="inherit" w="29.235">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.316" y="1" perimeter="0"/>
+        <constraint x="0.316" y="0" perimeter="0"/>
+        <constraint x="0.658" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -3627,8 +3645,10 @@
 
 <shape aspect="variable" h="50" name="autotransformer-1p" strokewidth="inherit" w="29.235">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.316" y="1" perimeter="0"/>
+        <constraint x="0.316" y="0" perimeter="0"/>
+        <constraint x="0.658" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -3804,8 +3824,8 @@
 
 <shape aspect="variable" h="50" name="autotransformer-3p--1" strokewidth="inherit" w="15.25">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.4098" y="1" perimeter="0"/>
+        <constraint x="0.4098" y="0" perimeter="0"/>
     </connections>
     <foreground>
         
@@ -3834,8 +3854,12 @@
 
 <shape aspect="variable" h="70" name="autotransformer-3p-star-connection" strokewidth="inherit" w="61.737">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.3116" y="0" perimeter="0"/>
+        <constraint x="0.6356" y="0" perimeter="0"/>
+        <constraint x="0.9595" y="0" perimeter="0"/>
+        <constraint x="0.1496" y="1" perimeter="0"/>
+        <constraint x="0.4736" y="1" perimeter="0"/>
+        <constraint x="0.7975" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -4284,8 +4308,15 @@
 
 <shape aspect="variable" h="70" name="autotransformer-3p" strokewidth="inherit" w="61.737">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.3116" y="0" perimeter="0"/>
+        <constraint x="0.6356" y="0" perimeter="0"/>
+        <constraint x="0.9595" y="0" perimeter="0"/>
+        <constraint x="0.3116" y="1" perimeter="0"/>
+        <constraint x="0.6356" y="1" perimeter="0"/>
+        <constraint x="0.9595" y="1" perimeter="0"/>
+        <constraint x="0.1496" y="1" perimeter="0"/>
+        <constraint x="0.4736" y="1" perimeter="0"/>
+        <constraint x="0.7975" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -5131,8 +5162,8 @@
 
 <shape aspect="variable" h="50" name="battery-multi-cell--1" strokewidth="inherit" w="10">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
     </connections>
     <foreground>
         
@@ -5200,8 +5231,8 @@
 
 <shape aspect="variable" h="13.312" name="battery-multi-cell" strokewidth="inherit" w="50">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0" y="0.6243" perimeter="0"/>
+        <constraint x="1" y="0.6243" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -5298,8 +5329,8 @@
 
 <shape aspect="variable" h="13.312" name="battery-single-cell" strokewidth="inherit" w="50">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+         <constraint x="0" y="0.6243" perimeter="0"/>
+        <constraint x="1" y="0.6243" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -5366,8 +5397,8 @@
 
 <shape aspect="variable" h="50" name="beacon" strokewidth="inherit" w="23.136">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.4378" y="0" perimeter="0"/>
+        <constraint x="0.4378" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -5508,8 +5539,8 @@
 
 <shape aspect="variable" h="50" name="bell" strokewidth="inherit" w="15">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0" y="0" perimeter="0"/>
+        <constraint x="0" y="1" perimeter="0"/>
     </connections>
     <foreground>
         
@@ -5543,8 +5574,8 @@
 
 <shape aspect="variable" h="50" name="brake" strokewidth="inherit" w="30.405">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.3421" y="0" perimeter="0"/>
+        <constraint x="0.3421" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -5690,8 +5721,8 @@
 
 <shape aspect="variable" h="60" name="bridge-rectifier--1" strokewidth="inherit" w="24">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
+        <constraint x="0.5" y="1" perimeter="0"/>
     </connections>
     <foreground>
         
@@ -5742,8 +5773,7 @@
 
 <shape aspect="variable" h="50" name="bridge-rectifier-form-b" strokewidth="inherit" w="62.634">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        
     </connections>
     <foreground>
         <save/>
@@ -5902,8 +5932,10 @@
 
 <shape aspect="variable" h="63.557" name="bridge-rectifier-form-c" strokewidth="inherit" w="59.482">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.48" y="0.9" perimeter="0"/>
+        <constraint x="0.48" y="0.12" perimeter="0"/>
+        <constraint x="0.07" y="0.5" perimeter="0"/>
+        <constraint x="0.9" y="0.5" perimeter="0"/>
     </connections>
     <foreground>
         <fillcolor color="black"/>
