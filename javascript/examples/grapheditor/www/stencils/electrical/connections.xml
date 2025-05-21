@@ -166,8 +166,8 @@
 
 <shape aspect="variable" h="80" name="ac-motor-2p-fan" strokewidth="inherit" w="35.291">
     <connections>
-        <constraint x="0.2632" y="1" perimeter="0"/>
-        <constraint x="0.83" y="1" perimeter="0"/>
+        <constraint x="0.2632" y="0" perimeter="0"/>
+        <constraint x="0.83" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -452,10 +452,10 @@
 
 <shape aspect="variable" h="51" name="ac-motor-2p-squirrel-cage-starting-resistor" strokewidth="inherit" w="49.291">
    <connections>
-        <constraint x="0.5783" y="1" perimeter="0"/>
-        <constraint x="0.391" y="1" perimeter="0"/>
-        <constraint x="1" y="0.609" perimeter="0"/>
-         <constraint x="1" y="0.811" perimeter="0"/>
+        <constraint x="0.5942" y="0" perimeter="0"/>
+        <constraint x="0.1885" y="0" perimeter="0"/>
+        <constraint x="1" y="0.5882" perimeter="0"/>
+         <constraint x="1" y="0.7843" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -655,8 +655,8 @@
 
 <shape aspect="variable" h="46" name="ac-motor-2p" strokewidth="inherit" w="34.291">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0,2709" y="0" perimeter="0"/>
+        <constraint x="0,8542" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
