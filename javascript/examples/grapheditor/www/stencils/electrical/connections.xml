@@ -3,8 +3,8 @@
 <shape aspect="variable" h="50" name="ac-coil" strokewidth="inherit" w="30">
    
     <connections>
-        <constraint x="0.6" y="0" perimeter="0"/>
-        <constraint x="0.6" y="1" perimeter="0"/>
+        <constraint x="0.6666" y="0" perimeter="0"/>
+        <constraint x="0.6666" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
