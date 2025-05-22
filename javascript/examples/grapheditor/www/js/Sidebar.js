@@ -1797,8 +1797,7 @@ Sidebar.prototype.addConnectionPalette = function(expand)
 			30, 60, '', 'thru-beam-transmitter-single-width', null, null, this.getTagsForStencil(gnmess, 'thru-beam-transmitter-single-width', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'transistor-npn--1;',
 			30, 60, '', 'transistor-npn--1', null, null, this.getTagsForStencil(gnmess, 'transistor-npn--1', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'transistor-npn;',
-			30, 60, '', 'transistor-npn', null, null, this.getTagsForStencil(gnmess, 'transistor-npn', dtmess).join(' ')),
+	
 	this.createVertexTemplateEntry(mess + 'transistor-pnp;',
 			30, 60, '', 'transistor-pnp', null, null, this.getTagsForStencil(gnmess, 'transistor-pnp', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'triac--1;',
