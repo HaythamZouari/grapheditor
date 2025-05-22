@@ -27426,7 +27426,7 @@
    <connections>
         <constraint x="0.8333" y="0" perimeter="0"/>
         <constraint x="0.8333" y="1" perimeter="0"/>
-        <constraint x="1" y="0.5" perimeter="0"/>
+        <constraint x="0" y="0.5" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -27616,8 +27616,9 @@
 
 <shape aspect="variable" h="78.519" name="jfet-p-channel" strokewidth="inherit" w="85.573">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.8333" y="0" perimeter="0"/>
+        <constraint x="0.8333" y="1" perimeter="0"/>
+        <constraint x="0" y="0.5" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -27807,8 +27808,10 @@
 
 <shape aspect="variable" h="20" name="junction-box" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="1" perimeter="0"/>
+        <constraint x="1" y="0.5" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
+        <constraint x="0" y="0.5" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -27889,8 +27892,8 @@
 
 <shape aspect="variable" h="50" name="key-selector-switch" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -27952,8 +27955,8 @@
 
 <shape aspect="variable" h="50" name="key-switch-nc-maintained" strokewidth="inherit" w="30">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.6667" y="0" perimeter="0"/>
+        <constraint x="0.6667" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -28088,8 +28091,8 @@
 
 <shape aspect="variable" h="50" name="key-switch-nc-spring-return" strokewidth="inherit" w="25">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.6" y="0" perimeter="0"/>
+        <constraint x="0.6" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -28213,8 +28216,8 @@
 
 <shape aspect="variable" h="50" name="key-switch-no-maintained" strokewidth="inherit" w="25">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -28379,8 +28382,8 @@
 
 <shape aspect="variable" h="50" name="key-switch-no-spring-return" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -28534,8 +28537,8 @@
 
 <shape aspect="variable" h="40" name="kilo-var-hour-meter" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
+        
     </connections>
     <foreground>
         <save/>
@@ -28677,8 +28680,8 @@
 
 <shape aspect="variable" h="40" name="kilo-watt-hour-meter" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
+      
     </connections>
     <foreground>
         <save/>
@@ -28771,8 +28774,8 @@
 
 <shape aspect="variable" h="50" name="latching-coil" strokewidth="inherit" w="20.405">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
+        <constraint x="0.5" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -28900,8 +28903,8 @@
 
 <shape aspect="variable" h="50" name="late-closing-no-contact" strokewidth="inherit" w="9.29">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29021,8 +29024,8 @@
 
 <shape aspect="variable" h="50" name="late-opening-nc-contact" strokewidth="inherit" w="19.291">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.4816" y="0" perimeter="0"/>
+        <constraint x="0.4816" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29160,8 +29163,8 @@
 
 <shape aspect="variable" h="50" name="led-coil" strokewidth="inherit" w="30">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.6667" y="0" perimeter="0"/>
+        <constraint x="0.6667" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29301,8 +29304,8 @@
 
 <shape aspect="variable" h="50" name="level-switch-nc" strokewidth="inherit" w="25">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.6" y="0" perimeter="0"/>
+        <constraint x="0.6" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29431,8 +29434,8 @@
 
 <shape aspect="variable" h="50" name="level-switch-no" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29587,8 +29590,8 @@
 
 <shape aspect="variable" h="50" name="level-switch" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29642,8 +29645,8 @@
 
 <shape aspect="variable" h="50" name="lever-switch" strokewidth="inherit" w="20">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29697,8 +29700,8 @@
 
 <shape aspect="variable" h="35" name="lightning-arrestor" strokewidth="inherit" w="10">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
+       
     </connections>
     <foreground>
         
@@ -29732,8 +29735,8 @@
 
 <shape aspect="variable" h="20" name="lightning-rod" strokewidth="inherit" w="12.5">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.2" y="1" perimeter="0"/>
+        
     </connections>
     <foreground>
         
@@ -29766,8 +29769,8 @@
 
 <shape aspect="variable" h="50" name="limit-switch-nc" strokewidth="inherit" w="19.291">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.4816" y="0" perimeter="0"/>
+        <constraint x="0.4816" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29864,8 +29867,8 @@
 
 <shape aspect="variable" h="50" name="limit-switch-no" strokewidth="inherit" w="9.29">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -29992,8 +29995,8 @@
 
 <shape aspect="variable" h="100" name="magnetic-sensor" strokewidth="inherit" w="24">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.5" y="0" perimeter="0"/>
+        <constraint x="0.5" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -30231,8 +30234,8 @@
 
 <shape aspect="variable" h="50" name="main-switch-1p" strokewidth="inherit" w="5.616">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -30301,8 +30304,10 @@
 
 <shape aspect="variable" h="50" name="main-switch-2p" strokewidth="inherit" w="25.616">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.2194" y="1" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
+        <constraint x="0.2194" y="0" perimeter="0"/>
+        <constraint x="1" y="0" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
@@ -30457,8 +30462,9 @@
 
 <shape aspect="variable" h="50" name="main-switch-3p" strokewidth="inherit" w="45.612">
    <connections>
-        <constraint x="" y="1" perimeter="0"/>
-        <constraint x="" y="1" perimeter="0"/>
+        <constraint x="0.123" y="1" perimeter="0"/>
+        <constraint x="0.5615" y="1" perimeter="0"/>
+        <constraint x="1" y="1" perimeter="0"/>
     </connections>
     <foreground>
         <save/>
