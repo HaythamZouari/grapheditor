@@ -1751,22 +1751,16 @@ Sidebar.prototype.addConnectionPalette = function(expand)
 			30, 60, '', 'tachometer', null, null, this.getTagsForStencil(gnmess, 'tachometer', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'telephone;',
 			30, 60, '', 'telephone', null, null, this.getTagsForStencil(gnmess, 'telephone', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'temp-controller;',
-			30, 60, '', 'temp-controller', null, null, this.getTagsForStencil(gnmess, 'temp-controller', dtmess).join(' ')),
+	
 	this.createVertexTemplateEntry(mess + 'temperature-controller--1;',
 			30, 60, '', 'temperature-controller--1', null, null, this.getTagsForStencil(gnmess, 'temperature-controller--1', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'temperature-controller (2);',
-			30, 60, '', 'temperature-controller (2)', null, null, this.getTagsForStencil(gnmess, 'temperature-controller (2)', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'temperature-controller-3d;',
-			30, 60, '', 'temperature-controller-3d', null, null, this.getTagsForStencil(gnmess, 'temperature-controller-3d', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'temperature-controller-black-3d;',
-			30, 60, '', 'temperature-controller-black-3d', null, null, this.getTagsForStencil(gnmess, 'temperature-controller-black-3d', dtmess).join(' ')),
+	
+	
 	this.createVertexTemplateEntry(mess + 'temperature-controller;',
 			30, 60, '', 'temperature-controller', null, null, this.getTagsForStencil(gnmess, 'temperature-controller', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'temperature-switch;',
 			30, 60, '', 'temperature-switch', null, null, this.getTagsForStencil(gnmess, 'temperature-switch', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'terminal-block;',
-			30, 60, '', 'terminal-block', null, null, this.getTagsForStencil(gnmess, 'terminal-block', dtmess).join(' ')),
+	
 	this.createVertexTemplateEntry(mess + 'thermal-current-overload-1p;',
 			30, 60, '', 'thermal-current-overload-1p', null, null, this.getTagsForStencil(gnmess, 'thermal-current-overload-1p', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'thermal-current-overload-2p;',
