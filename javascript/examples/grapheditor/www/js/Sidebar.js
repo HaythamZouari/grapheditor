@@ -1238,8 +1238,8 @@ Sidebar.prototype.addConnectionPalette = function(expand)
 			30, 60, '', 'diode--1', null, null, this.getTagsForStencil(gnmess, 'diode--1', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'diode-light-emitting-led;',
 			30, 60, '', 'diode-light-emitting-led', null, null, this.getTagsForStencil(gnmess, 'diode-light-emitting-led', dtmess).join(' ')),
-	this.createVertexTemplateEntry(mess + 'diode-light-emmitting-led;',
-			30, 60, '', 'diode-light-emmitting-led', null, null, this.getTagsForStencil(gnmess, 'diode-light-emmitting-led', dtmess).join(' ')),
+	this.createVertexTemplateEntry(mess + 'diode-light-emitting-led--1;',
+			30, 60, '', 'diode-light-emitting-led--1', null, null, this.getTagsForStencil(gnmess, 'diode-light-emitting-led--1', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'diode-photodiode;',
 			30, 60, '', 'diode-photodiode', null, null, this.getTagsForStencil(gnmess, 'diode-photodiode', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'diode-schottky;',
@@ -1412,6 +1412,7 @@ Sidebar.prototype.addConnectionPalette = function(expand)
 			30, 60, '', 'inverter', null, null, this.getTagsForStencil(gnmess, 'inverter', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'jfet-n-channel--1;',
 			30, 60, '', 'jfet-n-channel--1', null, null, this.getTagsForStencil(gnmess, 'jfet-n-channel--1', dtmess).join(' ')),
+	
 	this.createVertexTemplateEntry(mess + 'jfet-p-channel;',
 			30, 60, '', 'jfet-p-channel', null, null, this.getTagsForStencil(gnmess, 'jfet-p-channel', dtmess).join(' ')),
 	this.createVertexTemplateEntry(mess + 'junction-box;',
