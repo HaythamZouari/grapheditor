@@ -82,26 +82,11 @@ Sidebar.prototype.init = function()
 	var dir = STENCIL_PATH;
 	
 	this.addSearchPalette(true);
-	this.addSourcesPalette(false);
-	this.addPassifPalette(false);
-	this.addSemiconducteurPalette(false);
-	this.addCapteurPalette(false);
-	this.addInterrupteurPalette(false);
-	this.addProtectionPalette(false);
-	this.addMoteurPalette(false);
-	this.addTransformateurPalette(false);
-	this.addConnectiquePalette(false);
-	this.addEclairagePalette(false);
-	this.addMesurePalette(false);
-	this.addTelecomPalette(false);
-	this.addConrolePalette(false);
-	this.addTerrePalette(false);
-	this.addAutresPalette(false);
-	this.addGeneralPalette(false);
+	this.addGeneralPalette(true);
 	this.addMiscPalette(false);
 	this.addAdvancedPalette(false);
 	this.addBasicPalette(dir);
-	
+	this.addConnectionPalette(false);
 	
 	this.setCurrentSearchEntryLibrary('arrows');
 	this.addStencilPalette('arrows', mxResources.get('arrows'), dir + '/arrows.xml',
@@ -117,7 +102,14 @@ Sidebar.prototype.init = function()
 	this.setCurrentSearchEntryLibrary();
 	
 	this.setCurrentSearchEntryLibrary('clipart');
-	
+	this.addImagePalette('clipart', mxResources.get('clipart'), dir + '/clipart/', '_128x128.png',
+		['Earth_globe', 'Empty_Folder', 'Full_Folder', 'Gear', 'Lock', 'Software', 'Virus', 'Email',
+		 'Database', 'Router_Icon', 'iPad', 'iMac', 'Laptop', 'MacBook', 'Monitor_Tower', 'Printer',
+		 'Server_Tower', 'Workstation', 'Firewall_02', 'Wireless_Router_N', 'Credit_Card',
+		 'Piggy_Bank', 'Graph', 'Safe', 'Shopping_Cart', 'Suit1', 'Suit2', 'Suit3', 'Pilot1',
+		 'Worker1', 'Soldier1', 'Doctor1', 'Tech1', 'Security1', 'Telesales1'], null,
+		 {'Wireless_Router_N': 'wireless router switch wap wifi access point wlan',
+		  'Router_Icon': 'router switch'});
 	this.setCurrentSearchEntryLibrary();
 };
 
@@ -1065,7 +1057,7 @@ Sidebar.prototype.addSourcesPalette = function(expand)
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '1. Sources d'alimentation et batteries;', 30, 60, '', '1. Sources d'alimentation et batteries', null, null, this.getTagsForStencil(gnmess, '1. Sources d'alimentation et batteries', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'battery-multi-cell;', 30, 60, '', 'battery-multi-cell', null, null, this.getTagsForStencil(gnmess, 'battery-multi-cell', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'battery-multi-cell--1;', 30, 60, '', 'battery-multi-cell--1', null, null, this.getTagsForStencil(gnmess, 'battery-multi-cell--1', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'battery-single-cell;', 30, 60, '', 'battery-single-cell', null, null, this.getTagsForStencil(gnmess, 'battery-single-cell', dtmess).join(' ')),
@@ -1081,17 +1073,17 @@ this.createVertexTemplateEntry(mess + 'power-supply-rectifier-ac-dc--2;', 30, 60
 this.createVertexTemplateEntry(mess + 'power-supply-rectifier-inverter-ac-dc-2-way;', 30, 60, '', 'power-supply-rectifier-inverter-ac-dc-2-way', null, null, this.getTagsForStencil(gnmess, 'power-supply-rectifier-inverter-ac-dc-2-way', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Alimentation et batteries', 'Alimentation et batteries', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addPassifPalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '2. Composants passifs (R, L, C);', 30, 60, '', '2. Composants passifs (R, L, C)', null, null, this.getTagsForStencil(gnmess, '2. Composants passifs (R, L, C)', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'capacitor;', 30, 60, '', 'capacitor', null, null, this.getTagsForStencil(gnmess, 'capacitor', dtmess).join(' ')),       
 this.createVertexTemplateEntry(mess + 'capacitor--1;', 30, 60, '', 'capacitor--1', null, null, this.getTagsForStencil(gnmess, 'capacitor--1', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'capacitor-center-tapping;', 30, 60, '', 'capacitor-center-tapping', null, null, this.getTagsForStencil(gnmess, 'capacitor-center-tapping', dtmess).join(' ')),
@@ -1115,17 +1107,17 @@ this.createVertexTemplateEntry(mess + 'piezo-crystal;', 30, 60, '', 'piezo-cryst
 this.createVertexTemplateEntry(mess + 'spark-gap;', 30, 60, '', 'spark-gap', null, null, this.getTagsForStencil(gnmess, 'spark-gap', dtmess).join(' ')),       
 ];
 
-    this.addPaletteFunctions('Composants passifs', 'Composants passifs', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addSemiconducteurPalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '3. Semi-conducteurs et électronique de puissance;', 30, 60, '', '3. Semi-conducteurs et électronique de puissance', null, null, this.getTagsForStencil(gnmess, '3. Semi-conducteurs et électronique de puissance', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'diode;', 30, 60, '', 'diode', null, null, this.getTagsForStencil(gnmess, 'diode', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'diode--1;', 30, 60, '', 'diode--1', null, null, this.getTagsForStencil(gnmess, 'diode--1', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'diode-light-emitting-led;', 30, 60, '', 'diode-light-emitting-led', null, null, this.getTagsForStencil(gnmess, 'diode-light-emitting-led', dtmess).join(' ')),
@@ -1157,17 +1149,17 @@ this.createVertexTemplateEntry(mess + 'bridge-rectifier-form-d;', 30, 60, '', 'b
 this.createVertexTemplateEntry(mess + 'inverter;', 30, 60, '', 'inverter', null, null, this.getTagsForStencil(gnmess, 'inverter', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Semi-conducteurs', 'Semi-conducteurs', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addCapteurPalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '4. Capteurs et détecteurs;', 30, 60, '', '4. Capteurs et détecteurs', null, null, this.getTagsForStencil(gnmess, '4. Capteurs et détecteurs', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'capacitive-sensor-2-wire;', 30, 60, '', 'capacitive-sensor-2-wire', null, null, this.getTagsForStencil(gnmess, 'capacitive-sensor-2-wire', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'capacitive-sensor-3-wire;', 30, 60, '', 'capacitive-sensor-3-wire', null, null, this.getTagsForStencil(gnmess, 'capacitive-sensor-3-wire', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'inductive-sensor-2-wire;', 30, 60, '', 'inductive-sensor-2-wire', null, null, this.getTagsForStencil(gnmess, 'inductive-sensor-2-wire', dtmess).join(' ')),
@@ -1206,17 +1198,17 @@ this.createVertexTemplateEntry(mess + 'pressure-switch-no;', 30, 60, '', 'pressu
 this.createVertexTemplateEntry(mess + 'pressure-switch-no--1;', 30, 60, '', 'pressure-switch-no--1', null, null, this.getTagsForStencil(gnmess, 'pressure-switch-no--1', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Capteurs et détecteurs', 'Capteurs et détecteurs', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addInterrupteurPalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '5. Interrupteurs, commutateurs et relais;', 30, 60, '', '5. Interrupteurs, commutateurs et relais', null, null, this.getTagsForStencil(gnmess, '5. Interrupteurs, commutateurs et relais', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'cam-operated-change-over-switch;', 30, 60, '', 'cam-operated-change-over-switch', null, null, this.getTagsForStencil(gnmess, 'cam-operated-change-over-switch', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'cam-operated-counter-nc;', 30, 60, '', 'cam-operated-counter-nc', null, null, this.getTagsForStencil(gnmess, 'cam-operated-counter-nc', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'cam-operated-counter-no;', 30, 60, '', 'cam-operated-counter-no', null, null, this.getTagsForStencil(gnmess, 'cam-operated-counter-no', dtmess).join(' ')),
@@ -1314,7 +1306,8 @@ this.createVertexTemplateEntry(mess + 'selector-switch-3p-no-maintained-mid-off;
 this.createVertexTemplateEntry(mess + 'selector-switch-3p-no-maintained;', 30, 60, '', 'selector-switch-3p-no-maintained', null, null, this.getTagsForStencil(gnmess, 'selector-switch-3p-no-maintained', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'selector-switch-3p-no-return-off-maintained;', 30, 60, '', 'selector-switch-3p-no-return-off-maintained', null, null, this.getTagsForStencil(gnmess, 'selector-switch-3p-no-return-off-maintained', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'selector-switch-3p-no-spring-return-maintained-maintained;', 30, 60, '', 'selector-switch-3p-no-spring-return-maintained-maintained', null, null, this.getTagsForStencil(gnmess, 'selector-switch-3p-no-spring-return-maintained-maintained', dtmess).join(' ')),
-this.createVertexTemplateEntry(mess + 'selector-switch-3p-no-spring-return-mid-maintained;', 30, 60, '', 'selector-switch-3p-no-spring-return-mid-maintained', null, null, this.getTagsForStencil(gnmess, 'selector-switch-3p-no-spring-return-mid-maintained', dtmess).join(' ')),
+this.createVertexTemplateEntry(mess + 'selector-switch-3p-no-spring-return-mid-maintained;', 30, 60, '', 'selector-switch-3p-no-spring-return-mid-maintained', 
+null, null, this.getTagsForStencil(gnmess, 'selector-switch-3p-no-spring-return-mid-maintained', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'selector-switch-3p-no-spring-return-mid-off;', 30, 60, '', 'selector-switch-3p-no-spring-return-mid-off', null, null, this.getTagsForStencil(gnmess, 'selector-switch-3p-no-spring-return-mid-off', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'selector-switch-3p;', 30, 60, '', 'selector-switch-3p', null, null, this.getTagsForStencil(gnmess, 'selector-switch-3p', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'selector-switch-nc--1;', 30, 60, '', 'selector-switch-nc--1', null, null, this.getTagsForStencil(gnmess, 'selector-switch-nc--1', dtmess).join(' ')),
@@ -1337,17 +1330,17 @@ this.createVertexTemplateEntry(mess + 'late-closing-no-contact;', 30, 60, '', 'l
 this.createVertexTemplateEntry(mess + 'late-opening-nc-contact;', 30, 60, '', 'late-opening-nc-contact', null, null, this.getTagsForStencil(gnmess, 'late-opening-nc-contact', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Interrupteurs, commutateurs et relais', 'Interrupteurs, commutateurs et relais', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addProtectionPalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '6. Protection électrique (disjoncteurs, fusibles, relais);', 30, 60, '', '6. Protection électrique (disjoncteurs, fusibles, relais)', null, null, this.getTagsForStencil(gnmess, '6. Protection électrique (disjoncteurs, fusibles, relais)', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'circuit-breaker-3p;', 30, 60, '', 'circuit-breaker-3p', null, null, this.getTagsForStencil(gnmess, 'circuit-breaker-3p', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'circuit-breaker-3p--1;', 30, 60, '', 'circuit-breaker-3p--1', null, null, this.getTagsForStencil(gnmess, 'circuit-breaker-3p--1', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'circuit-breaker-3p-magnetic;', 30, 60, '', 'circuit-breaker-3p-magnetic', null, null, this.getTagsForStencil(gnmess, 'circuit-breaker-3p-magnetic', dtmess).join(' ')),
@@ -1387,17 +1380,17 @@ this.createVertexTemplateEntry(mess + 'motor-circuit-breaker-2p;', 30, 60, '', '
 this.createVertexTemplateEntry(mess + 'motor-circuit-breaker-3p;', 30, 60, '', 'motor-circuit-breaker-3p', null, null, this.getTagsForStencil(gnmess, 'motor-circuit-breaker-3p', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Protection électrique', 'Protection électrique', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addMoteurPalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '7. Moteurs et actionneurs;', 30, 60, '', '7. Moteurs et actionneurs', null, null, this.getTagsForStencil(gnmess, '7. Moteurs et actionneurs', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'ac-motor-2p;', 30, 60, '', 'ac-motor-2p', null, null, this.getTagsForStencil(gnmess, 'ac-motor-2p', dtmess).join(' ')), 
 this.createVertexTemplateEntry(mess + 'ac-motor-2p-fan;', 30, 60, '', 'ac-motor-2p-fan', null, null, this.getTagsForStencil(gnmess, 'ac-motor-2p-fan', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'ac-motor-2p-series-wound;', 30, 60, '', 'ac-motor-2p-series-wound', null, null, this.getTagsForStencil(gnmess, 'ac-motor-2p-series-wound', dtmess).join(' ')),
@@ -1418,17 +1411,17 @@ this.createVertexTemplateEntry(mess + 'brake;', 30, 60, '', 'brake', null, null,
 this.createVertexTemplateEntry(mess + 'clutch;', 30, 60, '', 'clutch', null, null, this.getTagsForStencil(gnmess, 'clutch', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Moteurs et actionneurs', 'Moteurs et actionneurs', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addTransformateurPalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '8. Transformateurs, bobines et enroulements;', 30, 60, '', '8. Transformateurs, bobines et enroulements', null, null, this.getTagsForStencil(gnmess, '8. Transformateurs, bobines et enroulements', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'autotransformer-1p;', 30, 60, '', 'autotransformer-1p', null, null, this.getTagsForStencil(gnmess, 'autotransformer-1p', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'autotransformer-1p-voltage-regulation;', 30, 60, '', 'autotransformer-1p-voltage-regulation', null, null, this.getTagsForStencil(gnmess, 'autotransformer-1p-voltage-regulation', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'autotransformer-3p;', 30, 60, '', 'autotransformer-3p', null, null, this.getTagsForStencil(gnmess, 'autotransformer-3p', dtmess).join(' ')),
@@ -1451,17 +1444,17 @@ this.createVertexTemplateEntry(mess + 'resonance-coil;', 30, 60, '', 'resonance-
 this.createVertexTemplateEntry(mess + 'supressor-coil;', 30, 60, '', 'supressor-coil', null, null, this.getTagsForStencil(gnmess, 'supressor-coil', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Transformateurs, bobines et enroulements', 'Transformateurs, bobines et enroulements', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addConnectiquePalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';
 	var gnmess = 'mxgraph.electrical.connections';
 	var dtmess = 'electrical ';
 	var fns = [
-
+this.createVertexTemplateEntry(mess + '9. Connectique et boîtiers;', 30, 60, '', '9. Connectique et boîtiers', null, null, this.getTagsForStencil(gnmess, '9. Connectique et boîtiers', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'female-connector;', 30, 60, '', 'female-connector', null, null, this.getTagsForStencil(gnmess, 'female-connector', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'male-connector;', 30, 60, '', 'male-connector', null, null, this.getTagsForStencil(gnmess, 'male-connector', dtmess).join(' ')),
 this.createVertexTemplateEntry(mess + 'plug-and-socket-connector;', 30, 60, '', 'plug-and-socket-connector', null, null, this.getTagsForStencil(gnmess, 'plug-and-socket-connector', dtmess).join(' ')),
@@ -1472,10 +1465,10 @@ this.createVertexTemplateEntry(mess + 'cable-head;', 30, 60, '', 'cable-head', n
 this.createVertexTemplateEntry(mess + 'frame-chassis;', 30, 60, '', 'frame-chassis', null, null, this.getTagsForStencil(gnmess, 'frame-chassis', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Connectique et boîtiers', 'Connectique et boîtiers', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
-Sidebar.prototype.addEclairagePalette = function(expand)
+Sidebar.prototype.addConnectionPalette = function(expand)
 {
 	var s = mxConstants.STYLE_VERTICAL_LABEL_POSITION + '=bottom;shadow=0;dashed=0;align=center;html=1;' + mxConstants.STYLE_VERTICAL_ALIGN + '=top;' + mxConstants.STYLE_SHAPE;
 	var mess = 'pointerEvents=1;' + s + '=mxgraph.electrical.connections.';

@@ -1081,7 +1081,7 @@ this.createVertexTemplateEntry(mess + 'power-supply-rectifier-ac-dc--2;', 30, 60
 this.createVertexTemplateEntry(mess + 'power-supply-rectifier-inverter-ac-dc-2-way;', 30, 60, '', 'power-supply-rectifier-inverter-ac-dc-2-way', null, null, this.getTagsForStencil(gnmess, 'power-supply-rectifier-inverter-ac-dc-2-way', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Alimentation et batteries', 'Alimentation et batteries', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
 Sidebar.prototype.addPassifPalette = function(expand)

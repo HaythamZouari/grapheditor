@@ -97,11 +97,11 @@ Sidebar.prototype.init = function()
 	this.addConrolePalette(false);
 	this.addTerrePalette(false);
 	this.addAutresPalette(false);
-	this.addGeneralPalette(false);
+	this.addGeneralPalette(true);
 	this.addMiscPalette(false);
 	this.addAdvancedPalette(false);
 	this.addBasicPalette(dir);
-	
+	this.addConnectionPalette(false);
 	
 	this.setCurrentSearchEntryLibrary('arrows');
 	this.addStencilPalette('arrows', mxResources.get('arrows'), dir + '/arrows.xml',
@@ -117,7 +117,14 @@ Sidebar.prototype.init = function()
 	this.setCurrentSearchEntryLibrary();
 	
 	this.setCurrentSearchEntryLibrary('clipart');
-	
+	this.addImagePalette('clipart', mxResources.get('clipart'), dir + '/clipart/', '_128x128.png',
+		['Earth_globe', 'Empty_Folder', 'Full_Folder', 'Gear', 'Lock', 'Software', 'Virus', 'Email',
+		 'Database', 'Router_Icon', 'iPad', 'iMac', 'Laptop', 'MacBook', 'Monitor_Tower', 'Printer',
+		 'Server_Tower', 'Workstation', 'Firewall_02', 'Wireless_Router_N', 'Credit_Card',
+		 'Piggy_Bank', 'Graph', 'Safe', 'Shopping_Cart', 'Suit1', 'Suit2', 'Suit3', 'Pilot1',
+		 'Worker1', 'Soldier1', 'Doctor1', 'Tech1', 'Security1', 'Telesales1'], null,
+		 {'Wireless_Router_N': 'wireless router switch wap wifi access point wlan',
+		  'Router_Icon': 'router switch'});
 	this.setCurrentSearchEntryLibrary();
 };
 
@@ -1081,7 +1088,7 @@ this.createVertexTemplateEntry(mess + 'power-supply-rectifier-ac-dc--2;', 30, 60
 this.createVertexTemplateEntry(mess + 'power-supply-rectifier-inverter-ac-dc-2-way;', 30, 60, '', 'power-supply-rectifier-inverter-ac-dc-2-way', null, null, this.getTagsForStencil(gnmess, 'power-supply-rectifier-inverter-ac-dc-2-way', dtmess).join(' ')),
 ];
 
-    this.addPaletteFunctions('Alimentation et batteries', 'Alimentation et batteries', (expand != null) ? expand : false, fns);
+    this.addPaletteFunctions('Connections', 'Connections', (expand != null) ? expand : false, fns);
 };
 
 Sidebar.prototype.addPassifPalette = function(expand)
