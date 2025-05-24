@@ -94,7 +94,7 @@
                 // Configures the default graph theme
                 var themes = new Object();
                 themes[Graph.prototype.defaultThemeName] = xhr[1].getDocumentElement(); 
-                Editor.useLocalStorage = true;
+                
                 // Main
                 new EditorUi(new Editor(urlParams['chrome'] == '0', themes));
             }, function()
